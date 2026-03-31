@@ -1,0 +1,51 @@
+<mat-card appearance="raised" class="header">
+  <mat-toolbar class="toolbar">
+    <div class="logo-wrapper">
+      <mat-icon>wb_sunny</mat-icon>
+      <span>WeatherSupreme</span>
+    </div>
+    <nav class="nav">
+      <button matButton [matMenuTriggerFor]="forecastMenu" >
+        <span>Előrejelzés</span>
+      </button>
+      <mat-menu #forecastMenu="matMenu" yPosition="below">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+
+      <button matButton [matMenuTriggerFor]="mainMenu" >
+        <span>Időkép</span>
+      </button>
+      <mat-menu #mainMenu="matMenu" yPosition="below">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+
+      <button matButton [matMenuTriggerFor]="heatMapMenu">
+        <span>Hőtérkép</span>
+      </button>
+      <mat-menu #heatMapMenu="matMenu" yPosition="below">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+
+
+      <button matButton [matMenuTriggerFor]="cloudsMenu">
+        <span>Felhőkép</span>
+      </button>
+      <mat-menu #cloudsMenu="matMenu" yPosition="below">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+    </nav>
+  </mat-toolbar>
+
+  <div class="info-row">
+    <div class="current-city-container">
+      <span>MOCK CITY</span>
+    </div>
+    <div class="current-weather-wrapper">
+      <span>11 ℃ gyenge eső</span>
+    </div>
+  </div>
+</mat-card>

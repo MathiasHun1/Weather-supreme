@@ -1,0 +1,36 @@
+.header {
+  background-color: var(--mat-sys-primary);
+  color: var(--mat-sys-on-primary);
+  padding-inline: var(--spacing-x-3);
+  padding-bottom: var(--spacing-x-6);
+
+  .toolbar {
+    padding-inline: 0;
+    background-color: var(--mat-sys-primary);
+    color: inherit;
+
+    .logo-wrapper {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-x-2);
+    }
+  }
+
+  .info-row {
+    display: flex;
+    gap: var(--spacing-x-4);
+
+    .current-city-container {
+      border: 1px solid var(--mat-sys-on-primary);
+      width: fit-content;
+      padding: var(--spacing-x-2) var(--spacing-x-4);
+      border-radius: var(--mat-sys-corner-small);
+    }
+
+    .current-weather-wrapper {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+}
