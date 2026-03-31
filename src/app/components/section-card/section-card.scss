@@ -1,6 +1,5 @@
-
+@use '../../../styles/palette.scss' as pal;
 
 .card {
-  padding: var(--spacing-x-6);
-  background-color: var(--color-primary-200);
+  background-color: pal.$secondary-10;
 }

@@ -1,3 +1,18 @@
 <app-section-card>
-  <p>main-page works!</p>
+  <div class="wrapper">
+    <section class="current-weather-container">
+      <h1>CURRENT WEATHER SECTION</h1>
+
+      <mat-form-field>
+        <input matInput type="text" name="" id="" [formControl]="searchControl" >
+      </mat-form-field>
+
+      <div class="data">
+        <span>szélesség: <strong>{{ city()?.latitude }}</strong></span>
+        <span>hosszúság: <strong>{{ city()?.longitude }}</strong></span>
+      </div>
+    </section>
+  </div>
+
+  <mat-card appearance="outlined" class="forecast-container"></mat-card>
 </app-section-card>

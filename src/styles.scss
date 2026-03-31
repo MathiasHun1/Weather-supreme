@@ -45,11 +45,16 @@ body {
   box-sizing: border-box;
 }
 
+:root {
+  --container-width: 1280px;
+  --mat-sys-on-surface: var(--mat-sys-on-primary);
+}
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
-:root {
-  --container-width: 1280px;
-  --mat-sys-on-surface: var(--mat-sys-on-primary);
+// Global component rules
+mat-card {
+  padding: var(--spacing-x-2) var(--spacing-x-3);
 }
